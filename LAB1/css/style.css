@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(../images/time.jpg) no-repeat fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.logo{
+	width: 100px;
+	cursor: pointer;
+}
+.info{
+	width: 80%;
+	margin: auto;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10px 10px 10px 10px;
+	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+.info ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.info ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.info ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #009879;
+	position: absolute;
+	left: -1%;
+	bottom: -3%;
+	transition: 0.25s;
+}
+.info ul li:hover::after{
+	width: 102%;
+}
+
+.content{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top: 70%;
+	transform: translateY(-50%);
+	flex-direction: column;
+	text-align: center;
+	color: #fff;
+}
+.content hl{
+	font-size: 40px;
+	margin-top: 50pz;
+}
+.content p{
+	font-size: 20px;
+	margin-top: 30pz;
+}
+.content-form{
+	width: 50%;
+	margin: auto;
+}
+
+.icons{
+	width: 25%;
+	margin: auto;
+	padding: 50px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.icon{
+	width: 50px;
+	cursor: pointer;
+}
+
+.profile-table{
+	border-collapse: collapse;
+	margin: auto;
+	font-size: 15px;
+	border-radius: 5px 5px 5px 5px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.profile-table th {
+	background-color: #009879;
+}
+.profile-table td {
+	padding: 12px 15px;
+}
+.profile-table tr {
+	border-bottom: 1px solid #dddddd;
+}
+
+@media
+	only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+table, th, td, tr {
+	display: block;
+}
