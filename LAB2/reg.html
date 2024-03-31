@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="banner">
+		<div class="info">
+			<img  src="./images/logo.png" class="logo">
+			<ul>
+				<li><a href="./reg.html">Реєстрація користувача</a></li>
+				<li><a href="./entr.html">Вхід до сайту</a></li>
+				<li><a href="./prof.html">Профіль користувача</a></li>
+				<li><a href="./index.html">Про додаток </a></li>
+				<li><a href="./work.html">Робоча сторінка додатка</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<hl>Реєстрація користувача</hl>
+			<form class="content-form" method="GET" action="work.html">
+			 	<fieldset>
+            		<legend>ім'я:</legend>            
+			 		<input type="text" name="username" placeholder="Enter name">
+        		</fieldset>
+        		<fieldset>
+            		<legend>email:</legend>
+            		<label></label>            
+			 		<input type="text" name="email" placeholder="Email">
+        		</fieldset>
+        		<fieldset>
+            		<legend>стать:</legend>            
+			 		    <input type="radio" name="gender" id="male">
+    					<label for="male">Male</label>
+    					<input type="radio" name="gender" id="female">
+    					<label for="female">Female</label>
+        		</fieldset>
+        		<fieldset>
+            		<legend>дата народження:</legend>            
+			 		<input type="date" name="date">
+        		</fieldset>
+        		<button class="btn" type="submit" >Підтвердити</button>
+        	</form>
+		</div>
+	</div>
+</body>
+</html>
